@@ -1,0 +1,42 @@
+fn main() void {
+    print("=== 1D Array (as matrix) ===");
+    matrix arr = [10, 20, 30, 40, 50];
+    printm(arr);
+    print("");
+    
+    print("=== 2D Matrix ===");
+    matrix mat = [[1, 2, 3],
+                  [4, 5, 6],
+                  [7, 8, 9]];
+    printm(mat);
+    print("");
+    
+    print("=== Matrix with while loop access ===");
+    
+    matrix a = [[5, 10, 15],
+                [20, 25, 30]];
+    
+    print("Matrix A (2x3):");
+    printm(a);
+    
+    print("");
+    print("=== Matrix multiplication ===");
+    matrix b = [[1, 2],
+                [3, 4],
+                [5, 6]];
+    
+    print("Matrix B (3x2):");
+    printm(b);
+    
+    matrix c = a @ b;
+    print("Result C = A @ B:");
+    printm(c);
+    
+    print("");
+    print("=== Simple counter with array ===");
+    int i = 0;
+    while (i < 5) {
+        print("Element", i, "would be:", i * 10);
+        i++;
+    }
+}

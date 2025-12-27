@@ -1,0 +1,10 @@
+fn main() void {
+    print("Enter an email: ");
+    str x = read();
+    str pattern = "^[a-zA-Z0-9]+@[a-zA-Z0-9]+\.[a-zA-Z]+$";
+    if(x ~= pattern) {
+        print("VALID mail");
+    } else {
+        print("INVALID mail");
+    }
+}

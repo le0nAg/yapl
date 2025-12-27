@@ -1,0 +1,32 @@
+fn main() void {
+    print("enter first number:");
+    int x = read();
+    
+    print("enter second number:");
+    int y = read();
+    
+    print("x sum y result:", x+y);
+    print("x sub y result:", x-y);
+    print("x div y result:", x/y);
+    print("x mul y result:", x*y);
+
+    print("x mod y result:", x%y);
+
+    print("sum is: ");
+    
+    if( ((x+y) % 2) == 0){
+        print("EVEN");
+    } else {
+        print("ODD");
+    }
+
+    if( x < y) {create_matrix
+        print("x < y");
+    } else {
+        if(x == y) {
+            print ("x = y");
+        } else {
+            print("x > y");
+        } 
+    }
+}
